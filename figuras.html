@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras Geométricas | Curso práctico JS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Figuras geométricas</h1>
+    </header>
+    <p>Primer taller del curso práctico del curso de JS</p>
+    <section>
+      <h2>Calcula el área y perímetro de un cuadrado</h2>
+      <form action="">
+        <label for="InputCuadrado">
+          Escribe cuanto mide cada lado del cuadrado:
+        </label>
+        <input id="InputCuadrado" type="number" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular area
+        </button>
+      </form>
+
+      <h2>Calcula el área y perímetro del círculo</h2>
+      <form action="">
+        <label for="InputCirculo"> 
+        Esacribe el radio del círculo 
+        </label>
+        <input id="InputCirculo" type="number" />
+        <button type="button" onclick="calcularPerimetroCirculo()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+          Calcular área
+        </button>
+      </form>
+       <form action="">
+         <h2>Calcular area y perímetro de trangulo</h2>
+         <label for="InputTriangulo">
+           Escribe los lados del triángulo, L1,L2,L3
+         </label>
+         <input id="InputTrianguloL1" type="number">
+         <input id="InputTrianguloL2" type="number">
+         <input id="InputTrianguloL3" type="number">
+         <button type="button" onclick="calcularPerimetroTriangulo()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+          Calcular área
+        </button>
+       </form>
+    </section>
+    <script src="./figuras.js"></script>
+  </body>
+</html>
