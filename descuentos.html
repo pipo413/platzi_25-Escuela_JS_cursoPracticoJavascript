@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de descuentos</title>
+</head>
+<body>
+    <h1>Calculadora de descuentos</h1>
+    <p>Este es el segundo taller del Curso Práctico de JS</p>
+    <section>
+        <h2>Calcular precios con descuentos</h2>
+        <form action="">
+            <label for="InputPrice">Escribe el precio del producto</label>
+            <input type="number" name="" id="InputPrice">
+            <label for="InputDiscount">Escribe el descuento del producto <input type="number" name="" id="InputDiscount"> % </label>
+            
+
+            <button type="button" onclick="ctaPriceDiscount()">Calcular precio con descuento</button>
+        </form>
+    </section>
+    <section>
+
+        <h1>CUPONES</h1>
+        <label for="InputPriceCoupon">Escribe el precio del producto</label>
+        <input type="number" name="" id="InputPriceCoupon">
+        
+        <select name="CUPONES" id="cuponDiscount">
+            <option value="1">Oferta 10%</option>
+            <option value="2">Oferta 20%</option>
+            <option value="3">Oferta 30%</option>
+            <option value="4">Oferta 50%</option>
+        </select>
+        <button type="button" onclick="ctaPriceDiscountCoupon()">Calcular precio con descuento</button>
+        
+        <script src="./decuentos.js"></script>
+        <p id="resultP"></p>
+    </section>
+    <section>
+
+        <h1>CUPONES2</h1>
+        <label for="InputPriceCoupon2">Escribe el precio del producto</label>
+        <input type="number" name="" id="InputPriceCoupon2">
+        <label for="InputCoupon"><br> Ingrese el nombre del cupon</label>
+        <input type="text" name="" id="cuponDiscount2">
+        <button type="button" onclick="ctaPriceDiscountCoupon2()">Calcular precio con descuento</button>
+        
+        <script src="./decuentos.js"></script>
+        <p id="resultP2"></p>
+    </section>
+</body>
+</html>
