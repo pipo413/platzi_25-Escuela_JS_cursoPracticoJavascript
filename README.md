@@ -303,3 +303,11 @@ function calcularModa(lista) {
     return moda
 }
 ~~~
+
+### Promedio ponderado
+
+* definimos la fórmula:
+  * [(n1*c1)+(n2*c2)]/(c1+c2...)...
+* Implementamos:
+  * Dada una lista de números, con `map` contamos en un objeto la cantidad de veces que se repite cada elemento
+
