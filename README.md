@@ -228,7 +228,7 @@ function ctaPriceDiscountCoupon2() {
 - Segundo paso: implementar la fórmula en JS
 - Tercer paso: Crear funciones.
   
-#### Promedio
+### Promedio
   * ciclo for
   * reduce(): esto nos permite a reemplazar el ciclo for para sumar elementos de la lista
 
@@ -240,4 +240,36 @@ function ctaPriceDiscountCoupon2() {
     );
 ~~~
 
-#### Promedio
+### Mediana
+Para calcular la mediana primero debemos acomodar la lista, es decir seleccionar el valor en el medio de la lista, si es impar y si es par el promedio entre estas dos, para ello utilizamos el métrodo `sort`
+#### sort
+El método sort ordena valores según el Unicode 
+~~~javascript
+const miArreglo = ['C', 'BC', 'AB'];
+
+miArreglo.sort(); // [AB, BC, C]
+
+// Para orden descendente:
+equipos.reverse();
+
+// ['Real Madrid', 'Manchester Utd', 'Juventus', 'Bayern Munich']
+~~~
+Para números utilizamos la función de comparación, donde el método `sort` va a ordenar los valores negativos cero y positivos en el orden correcto
+~~~javascript
+function(a, b) {return a - b}
+~~~
+Si el resultado es negativo, a se ordena antes que b.
+Si el resultado es positivo, b se ordena antes de a.
+Si el resultado es 0, nada cambia.
+
+Todo lo que necesitamos es usar la función de comparación dentro del método sort():
+~~~javascript
+const numeros = [3, 23, 12];
+
+numeros.sort(function(a, b){return a - b}); // --> 3, 12, 23
+
+// Orden descendente -> invertimos el orden del secundo parámetro
+const numeros = [3, 23, 12];
+
+numeros.sort(function(a, b){return b - a}); // --> 23, 12, 3
+~~~
