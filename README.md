@@ -273,3 +273,33 @@ const numeros = [3, 23, 12];
 
 numeros.sort(function(a, b){return b - a}); // --> 23, 12, 3
 ~~~
+
+
+### Mediana
+* Creamos una lista de numeros,
+* método map: Lo utilizamos para recorrer nuestro array para luego poder contar cuantas veces se repite un elemento de la lista
+
+~~~javascript
+const lista1Count = {}
+function orderArray(array) {
+    // Como tengo array dentro de array y necesito que lo ordene según el segundo parámetro...
+    const arrayOrdenado = array.sort(function (a, b) { return a[1] - b[1] })
+    return arrayOrdenado
+}
+function calcularModa(lista) {
+    lista.map(
+        function (param) {
+            lista1Count[param] ? lista1Count[param] += 1 : lista1Count[param] = 1
+        })
+
+    // Convertimos en un array lista1Count
+
+    const lista1Array = orderArray(Object.entries(lista1Count))
+    
+    // ya teniendo la lista ordenada tomamos el ultimo valor (el que aparece último), como tenemos una lista seleccionamos el índice [-1]
+
+    const moda = lista1Array[lista1Array.length -1]
+    
+    return moda
+}
+~~~
