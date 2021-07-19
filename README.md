@@ -311,3 +311,8 @@ function calcularModa(lista) {
 * Implementamos:
   * Dada una lista de números, con `map` contamos en un objeto la cantidad de veces que se repite cada elemento
 
+## Taller Final
+
+### Calculado de salarios
+
+metodos: map / splice()
